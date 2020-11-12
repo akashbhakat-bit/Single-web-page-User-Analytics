@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Honeywell</title>
+  <link rel="icon" href="data:image/png;base64,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" type="image/icon type">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link id="theme" rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
+<script>
+
+
+$(document).ready(function(){
+    $("#starred").click(function(){
+	  $("#inbox_body").hide();
+	  $("#sent_body").hide();
+	  $("#drafts_body").hide();
+
+	  $("#starred_body").show();
+	  $("#starred").css("color","crimson");
+	  $("#sent").css("color","");
+	  $("#inbox").css("color","");
+	  $("#drafts").css("color","");
+
+
+
+	 
+
+  
+    });
+  });
+  $(document).ready(function(){
+    $("#sent").click(function(){
+		$("#inbox_body").hide();
+	  $("#starred_body").hide();
+	  $("#drafts_body").hide();
+
+	  
+
+	  $("#sent_body").show();
+	  
+	  $("#sent").css("color","crimson");
+	  $("#starred").css("color","");
+	  $("#inbox").css("color","");
+	  $("#drafts").css("color","");
+
+	 
+  
+    });
+  });
+  $(document).ready(function(){
+    $("#drafts").click(function(){
+		$("#inbox_body").hide();
+	  $("#starred_body").hide();
+	  $("#sent_body").hide();
+
+		  $("#drafts_body").show();
+		  $("#drafts").css("color","crimson");
+		  $("#sent").css("color","");
+	  $("#inbox").css("color","");
+	  $("#starred").css("color","");
+
+
+  
+    });
+  });
+  $(document).ready(function(){
+	$("#inbox").click(function(){
+
+    $("#sent_body").hide();
+	  $("#starred_body").hide();
+	  $("#drafts_body").hide();
+
+	  $("#inbox_body").show();
+	  $("#inbox").css("color","crimson");
+	  $("#sent").css("color","");
+	  $("#starred").css("color","");
+	  $("#starred").css("color","");
+
+    });
+  });
+
+  $(document).ready(function(){
+    $("#hide").click(function(){
+      $("#menu1").hide();
+      $("#menu").hide();
+      $("#menu0").show();
+      $("#menu2").show();
+  
+    });
+  });
+  
+  $(document).ready(function(){
+    $("#hide1").click(function(){
+      $("#menu1").show();
+      $("#menu").show();
+      $("#menu0").hide();
+      $("#menu2").hide();
+  
+    });
+  });
+  $(document).ready(function(){
+    $("#user-wise").click(function(){
+	$("#selectuser").hide();
+	 
+
+	  
+
+	  $(".row_contacts").show();
+	  $("#navmap").show();
+	  $("#clickseq").show();
+	  $("#noofclick").show();
+	  $("#mouseovertime").show();
+	  $("#EnterDetails").show();
+	 
+  
+    });
+  });
+  $(document).ready(function(){
+    $("#avg").click(function(){
+	$("#selectuser").hide();
+	$("#Avg-Clicks").show();
+	$("#Avg-Time").show();
+	$("#no_of_clicks_piechart").show();
+	$("#time_over_piechart").show();
+
+	 
+  
+    });
+  });
+  $(document).ready(function(){
+    $("#show_Data").click(function(){
+		$("#NavigationMap2").show();
+
+	 
+  
+    });
+  });
+  
+
+var click_seq = [];
+var time_over= [];
+var history_seq = [];
+var time_over_each_element=[];
+var temp4=[];
+var temp3=[];
+var temp1=[];
+var temp=[];
+var temp6=[];
+var time_over_elements= [];
+var overTime_per_element=[];
+var click_per_element= [];
+var theDateEnter;
+var dateStringEnter;
+
+$(document).ready(function(){
+  $(".honeywell").mouseenter(function(e){
+       theDateEnter = new Date(Date.now() );
+dateStringEnter = theDateEnter.toGMTString();
+id_enter=e.target.id;
+
+  }),
+    $(".honeywell").mouseleave(function(e){
+       theDateLeave = new Date(Date.now() );
+dateStringLeave = theDateLeave.toGMTString();
+id_leave=e.target.id;
+
+ var TimeOver=theDateLeave - theDateEnter
+ 
+ history_seq.push({ID: e.target.id,Enter_timestamp:dateStringEnter, Leave_timestamp:dateStringLeave, Time_Over: TimeOver});
+ 
+
+ time_over.push({ID: e.target.id, Time_Over: TimeOver});
+ 
+  }),
+  
+ 
+  
+  $(".honeywell").click(function(e){
+var theDate = new Date(Date.now() );
+dateString = theDate.toGMTString();
+click_seq.push({ID: e.target.id,TimeStamp:dateString });
+}),
+
+
+$("#Logout_btn").click(function(){
+    
+     for(var j=0;j<click_seq.length;j++){
+temp.push(click_seq[+j].ID);
+}
+
+  
+
+     for(var j=0;j<time_over.length;j++){
+temp1.push(time_over[+j].ID);
+
+}
+
+for(var i=0;i<time_over.length;i++){
+
+}
+
+a=temp;
+
+
+
+  for(var i=0;i<a.length;i++){
+if(temp4.indexOf(a[i]) == -1){
+temp4.push(a[i]);
+}
+}
+
+
+for(var i=0;i<temp4.length;i++){
+temp6.push(0);
+
+}
+
+for(var i=0;i<temp4.length;i++){
+	for(var j=0;j<click_seq.length;j++){
+    if(temp4[i]==click_seq[+j].ID){
+    temp6[i]+=1;
+    }
+    
+    }
+}
+
+
+for(var i=0;i<temp4.length;i++){
+	click_per_element.push({ID:temp4[i],No:temp6[i]});
+}
+
+
+
+b=temp1
+
+for(var i=0;i<b.length;i++){
+if(temp3.indexOf(b[i]) == -1){
+temp3.push(b[i]);
+}
+}
+
+
+for(var i=0;i<temp3.length;i++){
+time_over_each_element.push(0);
+
+}
+
+for(var i=0;i<temp3.length;i++){
+	for(var j=0;j<time_over.length;j++){
+    if(temp3[i]==time_over[+j].ID){
+    time_over_each_element[i]+=time_over[+j].Time_Over;
+    }
+    
+    }
+}
+
+for(var i=0;i<temp3.length;i++){
+	var a=temp3[i];
+	var b=time_over_each_element[i]
+	overTime_per_element.push({ID:a,Time:b});
+}
+
+
+
+
+logout();
+
+
+});
+
+ 
+
+  
+
+
+
+});
+
+  
+  </script>
+</head>
+
+<body>
+
+<div id="Side_Nav">
+
+<ul id="menu" class="menuOn">
+  <li ><a class="active"  >Login</a></li>
+</ul>
+<ul id="menu0" class="menuOff">
+  <li ><a class="active"  >Sign Up</a></li>
+</ul>
+
+
+</div>
+<div id="login_div" >
+    <div id="menu1" class="menuOn">
+            <div id="login" style="margin-left:25%;padding:1px 16px;height:1000px;">
+            
+                <div class="content-wrapper">
+                    <div class="container">
+                        <div class="row pad-botm">
+                            <div class="col-md-12">
+                                <h4 class="header-line" id="userloginchange">USER LOGIN </h4>
+                            </div>
+                        </div>
+                            
+                        <!--LOGIN PANEL START-->           
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" >
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <div id="Login_Here">USER LOGIN HERE!!!</div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <form role="form" >
+											<div class="form-group">
+                                                <label>Name</label>
+                                                <input class="form-control" type="text" name="name" id="name1" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Email id</label>
+                                                <input class="form-control" type="text" name="emailid" id="email_field" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input class="form-control" type="password" name="password"  id="password_field"/>
+                                                
+                                            </div>
+                
+                                            
+
+                                            <button type="button" name="login" onsubmit="return false"  id="Login" onclick="handleLogin()">LOGIN </button> | <button type="button" onsubmit="return false"id="hide">Not Register Yet</button>  | <button type="button" onsubmit="return false" id="admin_login" onclick="admin()">Admin Login</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+
+            </div>
+    </div>
+    <div id="menu2" class="menuOff">
+        <div id="signup" style="margin-left:25%;padding:1px 16px;height:1000px;">
+        
+                
+
+            
+            <div class="content-wrapper">
+                <div class="container">
+                    <div class="row pad-botm">
+                        <div class="col-md-12">
+                            <h4 class="header-line">User Signup</h4>
+                            
+                        </div>
+
+                    </div>
+                    <div class="row">
+                    
+                        <div class="col-md-9 col-md-offset-1">
+                            <div class="panel panel-danger">
+                                <div class="panel-heading">
+                                    SIGN UP HERE!!!
+                                </div>
+                                <div class="panel-body">
+                                    <form name="signup" >
+                                      <div class="form-group">
+                                        <label>Your Full Name</label>
+                                        <input class="form-control" type="text" name="fullname" id="fullname" autocomplete="off" required />
+                                        </div>
+
+
+                                        <div class="form-group">
+                                        <label>Mobile Number </label>
+                                        <input class="form-control" type="text" name="mobileno" id="mobileno" maxlength="10" autocomplete="off" required />
+                                        </div>
+                                                    
+                                        <div class="form-group">
+                                        <label>Age</label>
+                                        <input class="form-control" type="text" name="age" id="age"   autocomplete="off" required  />
+                                        <span id="user-availability-status" style="font-size:12px;"></span> 
+                                        </div>
+
+                                                    
+                                        <div class="form-group">
+                                        <label>Email id</label>
+                                        <input class="form-control" type="email" name="email" id="sign_email"   autocomplete="off" required  />
+                                        <span id="user-availability-status" style="font-size:12px;"></span> 
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label>Password</label>
+                                        <input class="form-control" type="password" name="password"id="sign_password"  autocomplete="off" required  />
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label>Confirm Password </label>
+                                        <input class="form-control"  type="password" name="confirmpassword" id="sign_password_conf" autocomplete="off" required  />
+                                        </div>
+                                                                      
+                                        <button type="button" onsubmit="return false"name="signUp"  onclick="handleSignUp()" id="hide1">Register Now </button>
+
+                                    </form>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+                          
+ <div id="user_div" class="menuOff" >
+   
+<div class="container"> 
+		<div class="row" id="top">
+		
+			<div class="col-md-2"> 
+			<div class="wrap">
+			<img class="gb_va" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png" srcset="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png 1x, https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x.png 2x " alt="" aria-hidden="true" style="width:109px;height:40px">
+			</div></div>
+			<div class="col-md-10">
+				<div class="wrap">
+					<!--<div class="popup"><b>Loading...</b></div>-->
+   					<div class="search">
+      					<input type="text" class="searchTerm" placeholder=&#9663;>
+      					<button type="submit" class="searchButton">
+        					<i class="glyphicon glyphicon-search icon"></i>
+						 </button>
+					   </div>
+
+					   <button type="button" class="btn honeywell" id="Logout_btn">AKASH BHAKAT </button>
+   					<button type="button" class="btn" id="basic5"><i class="glyphicon glyphicon-menu-up"></i></button>
+   					<button type="button" class="btn" id="basic6"><i class="glyphicon glyphicon-th"></i></button>
+   					<button type="button" class="btn" id="basic7"><i class="glyphicon glyphicon-bell"></i></button>
+					   <button type="button" class="btn" id="basic8"><i class="glyphicon glyphicon-user"></i></button>
+					   
+				</div>
+			</div>
+		</div>
+		<div class="row" id="middle">
+			<div class="col-md-2 honeywell" id="mail"> 
+				Mail &#9662;
+
+			</div>
+			<div class="col-md-10">
+				<button type="button" class="btn" id="basic">&#9634; &#9663;</button>
+				<button type="button" class="btn" id="basic1">&#8635;</button>
+				<button type="button" class="btn" id="basic2">More &#9662;</button>
+				<button type="button" class="btn" id="basic3"><b>1-1</b> of <b>1</b></button>
+				<button type="button" class="btn" id="basic9">&#10094;</button>
+				<button type="button" class="btn" id="basic10">&#10095;</button>
+				<button type="button" class="btn" id="basic11"><i class="glyphicon glyphicon-cog"></i> &#9662;</button>
+			</div>
+		</div>
+		<div class="row" id="bottom">
+			<div class="col-md-2" id="bottom-left"> 
+				<p></p>
+				<button type="button" class="btn btn-danger btn-md honeywell" id="compose">COMPOSE</button>
+				<p></p>
+				<p id="inbox" class="honeywell"style="color:crimson">
+				Inbox (2)</p>
+				<!--<p id="new_inbox" class="selected" class="menuOff">Inbox (2)</p>
+				<p id="unselected_inbox" class="selected" class="menuOff">Inbox (2)</p>
+				-->
+
+				<p id="starred" class="honeywell">Starred</p>
+				<!--<p id="new_starred" class="selected"class="menuOff">Starred</p>
+				-->
+				<p id="sent" class="honeywell">Sent</p>
+				<!--<p id="new_sent" class="selected" class="menuOff">Sent</p>
+				-->
+				<p id="drafts" class="honeywell">Drafts (54)</p>
+				<!--
+					<p id="new_drafts" class="selected" class="menuOff">Drafts (7)</p>
+				-->
+				<p id="More" class="honeywell">More &#9662;</p>
+			</div>
+			<div class="col-md-10" >
+				<div class="row">
+					<div class="col-md-10" id="bottom-middle">
+						<div class="row" id="widget">
+						<p></p>
+						<ul class="nav nav-tabs">
+  							<li class="nav-item">
+    							<a class="nav-link active" href="#" id="active1"><i class="glyphicon glyphicon-inbox"></i> Primary</a>
+  							</li>
+  							<li class="nav-item">
+    							<a class="nav-link disabled" href="#" id="inactive1"><i class="glyphicon glyphicon-user"></i>Social</a>
+  							</li>
+ 							<li class="nav-item">
+    							<a class="nav-link disabled" href="#" id="inactive2"><i class="glyphicon glyphicon-tags"></i> Promotions</a>
+  							</li>
+  							<li class="nav-item">
+    							<a class="nav-link disabled" href="#" id="inactive"><span class="glyphicon glyphicon-info-sign"></span> Updates</a>
+  							</li>
+						</ul>
+						<button type="button" class="btn" id="basic19">&#10133;</button>
+					    </div>
+						<p></p>
+						<div id="inbox_body" class="menuOn">
+					    <div class="row emails" id="email_1">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star"> &#9734;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">Akash Bhakat,<b>VIT</b> (2) </div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_01"><b>WELCOME</b> - Welcome to World Class institute Mr. AKASH BHAKAT. </div>
+					    	<div class="col-md-2 time"><b>10:58 am</b></div>
+					    </div>
+					    <div class="row emails" id="email_2">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star"> &#9734;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender"><b>Aditya, Shivankar</b></div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_02"><b>Regarding Academics</b> - Congratulations !! Hoping to Collaborate in the future!</div>
+					    	<div class="col-md-2 time"><b>9:12 am</b></div>
+					    </div>
+					    <div class="row emails1" id="email_3">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star"> &#9734;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">me, Harsh(2) </div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_03">8th Period - Hey there. Want to work with some Python tools in the 8th Period ?</div>
+					    	<div class="col-md-2 time">9:05 am</div>
+					    </div>
+					    <div class="row emails1" id="email_4">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">me</div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_04">(no subject) - -- VIT Admission Successful. Please follow the steps to confirm...</div>
+					    	<div class="col-md-2 time">Oct 4</div>
+					    </div>
+					    <div class="row emails1" id="email_5">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">VIT PLACEMENT via.</div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_05"><b>Fwd: 21st Century Classroom Visit?</b> - Ann Feldmann District Technology O...</div>
+					    	<div class="col-md-2 time">Oct 2</div>
+					    </div>
+						<div class="row emails1" id="email_6">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">SAMSUNG PRISM</div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_06"><b>SAMSUNG PRISM</b> - WELCOME On-Board ! Join us for kickoff meeting of VIT Ph...</div>
+					    	<div class="col-md-2 time">Sept 28</div>
+					    </div>
+						<div class="row emails1" id="email_7">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">'COE VELLORE' via 1.</div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_07"><b>PANEL DISCUSSION VIA OUR ALUMNI</b> - Inviting you for panel discussion on ne...</div>
+					    	<div class="col-md-2 time">Sept 20</div>
+					    </div>
+						<div class="row emails1" id="email_8">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">'VIT PLACEMENT' via 1.</div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_08"><b>Summer Internship</b> - Fidelity Investments invite you to join the Pre-Placem...</div>
+					    	<div class="col-md-2 time">Sept 12</div>
+					    </div>
+						<div class="row emails1" id="email_9">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">Google</div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_09"><b>Security Alert</b> - Recovery phone was changed Akash. The new number added i...</div>
+					    	<div class="col-md-2 time">Sept 8</div>
+					    </div>
+						<div class="row emails1" id="email_10">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">Gmail Team</div></div>
+					    	<div class="col-md-6 honeywell" id="inbox_mail_10"><b>Tips for using your new inbox</b> - Akash Bhakat welcome to our new inbox. Sh...</div>
+					    	<div class="col-md-2 time">Sept 5</div>
+						</div>
+					</div>
+					<div id="sent_body" class="menuOff">
+
+					
+					    <div class="row emails1" id="sent_1">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">To: me</div></div>
+					    	<div class="col-md-6 honeywell" id="sent_mail_01">(no subject) - -- VIT Admission Successful. Please follow the steps to confirm...</div>
+					    	<div class="col-md-2 time">Oct 4</div>
+					    </div>
+					    <div class="row emails1" id="sent_2">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">To: VIT PLACEMENT via.</div></div>
+					    	<div class="col-md-6 honeywell" id="sent_mail_02"><b>Fwd: 21st Century Classroom Visit?</b> - Ann Feldmann District Technology O...</div>
+					    	<div class="col-md-2 time">Oct 2</div>
+					    </div>
+						<div class="row emails1" id="sent_3">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">To: SAMSUNG PRISM</div></div>
+					    	<div class="col-md-6 honeywell" id="sent_mail_03"><b>SAMSUNG PRISM</b> - WELCOME On-Board ! Join us for kickoff meeting of VIT Ph...</div>
+					    	<div class="col-md-2 time">Sept 28</div>
+					    </div>
+						<div class="row emails1" id="sent_4">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">To: 'COE VELLORE' via 1.</div></div>
+					    	<div class="col-md-6 honeywell" id="sent_mail_04"><b>PANEL DISCUSSION VIA OUR ALUMNI</b> - Inviting you for panel discussion on ne...</div>
+					    	<div class="col-md-2 time">Sept 20</div>
+					    </div>
+						<div class="row emails1" id="sent_5">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">To: 'VIT PLACEMENT' via 1.</div></div>
+					    	<div class="col-md-6 honeywell" id="sent_mail_05"><b>Summer Internship</b> - Fidelity Investments invite you to join the Pre-Placem...</div>
+					    	<div class="col-md-2 time">Sept 12</div>
+					    </div>
+						<div class="row emails1" id="sent_6">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">To: Google</div></div>
+					    	<div class="col-md-6 honeywell" id="sent_mail_06"><b>Security Alert</b> - Recovery phone was changed Akash. The new number added i...</div>
+					    	<div class="col-md-2 time">Sept 8</div>
+					    </div>
+						<div class="row emails1" id="sent_7">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">To: Gmail Team</div></div>
+					    	<div class="col-md-6 honeywell" id="sent_mail_07"><b>Tips for using your new inbox</b> - Akash Bhakat welcome to our new inbox. Sh...</div>
+					    	<div class="col-md-2 time">Sept 5</div>
+					    </div>
+					</div>
+					<div id="drafts_body" class="menuOff">
+						<div class="row emails1" id="draft_1">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">me</div></div>
+					    	<div class="col-md-6 honeywell" id="draft_mail_01">(no subject) - -- VIT Admission Successful. Please follow the steps to confirm...</div>
+					    	<div class="col-md-2 time">Oct 4</div>
+					    </div>
+					    <div class="row emails1" id="draft_2">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">VIT PLACEMENT via.</div></div>
+					    	<div class="col-md-6 honeywell" id="draft_mail_02"><b>Fwd: 21st Century Classroom Visit?</b> - Ann Feldmann District Technology O...</div>
+					    	<div class="col-md-2 time">Oct 2</div>
+					    </div>
+						<div class="row emails1" id="draft_3">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">SAMSUNG PRISM</div></div>
+					    	<div class="col-md-6 honeywell" id="draft_mail_03"><b>SAMSUNG PRISM</b> - WELCOME On-Board ! Join us for kickoff meeting of VIT Ph...</div>
+					    	<div class="col-md-2 time">Sept 28</div>
+					    </div>
+						<div class="row emails1" id="draft_4">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">'COE VELLORE' via 1.</div></div>
+					    	<div class="col-md-6 honeywell" id="draft_mail_04"><b>PANEL DISCUSSION VIA OUR ALUMNI</b> - Inviting you for panel discussion on ne...</div>
+					    	<div class="col-md-2 time">Sept 20</div>
+					    </div>
+						<div class="row emails1" id="draft_5">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">'VIT PLACEMENT' via 1.</div></div>
+					    	<div class="col-md-6 honeywell" id="draft_mail_05"><b>Summer Internship</b> - Fidelity Investments invite you to join the Pre-Placem...</div>
+					    	<div class="col-md-2 time">Sept 12</div>
+					    </div>
+						<div class="row emails1" id="draft_6">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">Google</div></div>
+					    	<div class="col-md-6 honeywell" id="draft_mail_06"><b>Security Alert</b> - Recovery phone was changed Akash. The new number added i...</div>
+					    	<div class="col-md-2 time">Sept 8</div>
+					    </div>
+						<div class="row emails1" id="draft_7">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">Gmail Team</div></div>
+					    	<div class="col-md-6 honeywell" id="draft_mail_07"><b>Tips for using your new inbox</b> - Akash Bhakat welcome to our new inbox. Sh...</div>
+					    	<div class="col-md-2 time">Sept 5</div>
+					    </div>
+
+					</div>
+					<div id="starred_body" class="menuOff">
+						<div class="row emails1" id="starred_1">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">me</div></div>
+					    	<div class="col-md-6 honeywell" id="starred_mail_01">(no subject) - -- VIT Admission Successful. Please follow the steps to confirm...</div>
+					    	<div class="col-md-2 time">Oct 4</div>
+					    </div>
+					    <div class="row emails1" id="starred_2">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">VIT PLACEMENT via.</div></div>
+					    	<div class="col-md-6 honeywell" id="starred_mail_02"><b>Fwd: 21st Century Classroom Visit?</b> - Ann Feldmann District Technology O...</div>
+					    	<div class="col-md-2 time">Oct 2</div>
+					    </div>
+						<div class="row emails1" id="starred_3">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">SAMSUNG PRISM</div></div>
+					    	<div class="col-md-6 honeywell" id="starred_mail_03"><b>SAMSUNG PRISM</b> - WELCOME On-Board ! Join us for kickoff meeting of VIT Ph...</div>
+					    	<div class="col-md-2 time">Sept 28</div>
+					    </div>
+						<div class="row emails1" id="starred_4">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">'COE VELLORE' via 1.</div></div>
+					    	<div class="col-md-6 honeywell" id="starred_mail_04"><b>PANEL DISCUSSION VIA OUR ALUMNI</b> - Inviting you for panel discussion on ne...</div>
+					    	<div class="col-md-2 time">Sept 20</div>
+					    </div>
+						<div class="row emails1" id="starred_5">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">'VIT PLACEMENT' via 1.</div></div>
+					    	<div class="col-md-6 honeywell" id="starred_mail_05"><b>Summer Internship</b> - Fidelity Investments invite you to join the Pre-Placem...</div>
+					    	<div class="col-md-2 time">Sept 12</div>
+					    </div>
+						<div class="row emails1" id="starred_6">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">Google</div></div>
+					    	<div class="col-md-6 honeywell" id="starred_mail_06"><b>Security Alert</b> - Recovery phone was changed Akash. The new number added i...</div>
+					    	<div class="col-md-2 time">Sept 8</div>
+					    </div>
+						<div class="row emails1" id="starred_7">
+					    	<div class="col-md-4"><div class="box">&#9634;</div> <div class="star1"> &#9733;</div><div class="imp"><i class="glyphicon glyphicon-bookmark"></i></div><div class="sender">Gmail Team</div></div>
+					    	<div class="col-md-6 honeywell" id="starred_mail_07"><b>Tips for using your new inbox</b> - Akash Bhakat welcome to our new inbox. Sh...</div>
+					    	<div class="col-md-2 time">Sept 5</div>
+					    </div>
+
+						</div>
+
+					</div>
+
+
+
+
+
+
+
+					<div class="col-md-2">
+						<button type="button" class="btn" id="basic12"><i class="glyphicon glyphicon-user"></i></button>
+						<button type="button" class="btn" id="basic13"><i class="fa fa-circle"></i></button>
+						<button type="button" class="btn" id="basic14">&#9662;</button>
+						<button type="button" class="btn" id="basic15"><i class="glyphicon glyphicon-earphone"></i></button>
+				        <button type="button" class="btn" id="basic16"><i class="glyphicon glyphicon-facetime-video"></i></button>
+				        <input type="text" class="searchTerm1" placeholder="Search People...">
+				   		<div class="chat"> 
+				   			<button type="button" class="btn" id="basic17"><i class="fa fa-circle"></i></button>
+				        	<div class="chatter honeywell" id="Chat_Aditya"><p>Aditya Bist</p></div>
+				        	<button type="button" class="btn" id="basic18"><i class="fa fa-circle"></i></button>
+				        	<div class="chatter1 honeywell" id="Chat_Shivankar"><p>Shivankar</p></div>
+				        	<div class="offline">
+				        		<p class="honeywell" id="Chat_Vaibhav">Vaibhav Singh</p>
+				        		<p class="honeywell" id="Chat_Gauri">Gauri Shankar Gupta</p>
+				        		<p class="honeywell" id="Chat_Navdeep">Navdeep Chawla</p>
+				        		<p class="honeywell" id="Chat_Anuj">Anuj Kapoor</p>
+				        		<p class="honeywell" id="Chat_Udhav">Udhav Bhardwaj</p>
+				        		<p class="honeywell" id="Chat_Ajay">Ajay Kumar</p>
+				        		<p class="honeywell" id="Chat_Ajit">Ajit Gupta<p>
+				        		<p class="honeywell" id="Chat_Arvind">Arvind Manav</p>
+				        		<p class="honeywell" id="Chat_Arun">Arun Kumar Gupta</p>
+				        		<p class="honeywell" id="Chat_Sumit">Sumit Bhakat</p>
+				        		<p class="honeywell" id="Chat_Amit">Amit Malhotra</p>
+				        		<p class="honeywell" id="Chat_Swastik">Swastik Mohapatra</p>
+				        	</div>
+				        </div>
+					</div>
+			</div>
+		</div>
+	</div> 
+
+  </div>
+
+
+
+    
+  </div>
+  <div id="admin_div" >
+<!----	Select User
+	<div id="admin_div_select_user">
+	
+		<button type="button" onsubmit="return false" onclick="signout()" >logout </button>
+
+	</div>
+
+
+	<button type="button" onsubmit="return false"  id="get_id" onclick="get_info()" >Submit </button>
+
+<div id="user_info">
+
+
+</div>
+<div id="user_analytics">
+	
+
+	<button type="button" onsubmit="return false"  id="show_Data" onclick="show_data()" >Submit </button>
+<div id="ClickSequence"></div>
+<div id="elementWiseClick"></div>
+<div id="elementWiseMouseOverTime">
+
+
+	
+</div>
+<div id="NavigationMap"></div>  
+</div>
+
+-->
+<div id="invoice">
+
+	<div class="toolbar hidden-print">
+		<div class="text-right">
+			<button id="printInvoice" class="btn btn-info" onclick="location.reload();" > Search More</button>
+			<button id="printInvoice" class="btn btn-info" onclick="window.print()" > Print</button>
+			<button class="btn btn-info" type="button" onsubmit="return false" onclick="signout()" >logout </button> 
+
+		</div>
+		<hr>
+	</div>
+	<div class="invoice overflow-auto">
+		<div style="min-width: 600px">
+			<header>
+				<div class="row">
+					<div class="col">
+						
+							<img src="data:image/png;base64,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" data-holder-rendered="true" />
+							
+					</div>
+					<div class="col company-details">
+						<h2 class="name">
+							
+						   By:- AKASH BHAKAT
+							
+						</h2>
+						<div>USAGE ANALYTICS REPORT</div>
+					</div>
+				</div>
+			</header>
+			<main>
+				<div id="selectuser" class="menuOn">
+					<p>Select Amongst the following:-</p>
+					<input type="radio" id="user-wise" name="info_type" value="user_wise">
+					<label for="User-wise">User-Wise</label><br>
+					<input type="radio" id="avg" name="info_type" onclick="agregate()" value="avg">
+					<label for="agregate" >Aggregate Informations</label><br>
+				</div>
+				<div class="row contacts menuOff" id="EnterDetails">
+					<div class="col invoice-to">
+						<div class="text-gray-light">User Information</div>
+						<div id="admin_div_select_user">
+							
+
+					  
+						</div>   
+						<button type="button" onsubmit="return false"  id="get_id" onclick="get_info()" >Submit User</button>
+
+  
+						<div id="user_info">
+  
+						</div>
+  
+						<div id="user_analytics">
+  
+  
+						</div>
+  
+						<button type="button" onsubmit="return false"  id="show_Data" onclick="show_data()" >Submit Timestamp </button>
+  
+					  
+					  </div>
+				
+				</div>
+				<div class="row_50_50">
+					<div class="column_50_50">
+				<H2 id="navmap" class="menuOff">NAVIGATION MAP FROM LOGIN TO LOGOUT</H2>
+				<div id="NavigationMap"></div></div>
+				<div class="column_50_50 menuOff" id="NavigationMap2"></div>
+					
+			
+			</div>
+			<div class="row_50_50">
+				<h2 id="clickseq" class="menuOff">CLICK SEQUENCE FROM LOGIN TO LOGOUT</h2>
+				<div id="ClickSequence"></div></div>
+
+				<div class="row_50_50">
+				<H2 id="noofclick" class="menuOff">NUMBER OF TOTAL CLICKS ON KEY ELEMENTS</H2>
+				<div id="elementWiseClick"></div></div>
+
+				<div class="row_50_50">
+				<H2 id="mouseovertime" class="menuOff"> MOUSE OVERTIME ON KEY ELEMENTS</H2>
+				  <div id="elementWiseMouseOverTime"> </div></div>
+
+
+
+
+				  <div class="row_50_50">
+					<div class="column_50_50">
+				<H2 id="Avg-Clicks" class="menuOff">Average Clicks on Key Elements</H2>
+				<div  id="elementWiseClickAvg"></div></div>
+					<div class="column_50_50">
+						<div class="menuOff" id="no_of_clicks_piechart"></div></div></div>
+						<div class="row_50_50">
+							<div class="column_50_50">
+				<H2 id="Avg-Time" class="menuOff">Average Time Over on Key Elements</H2>
+				<div id="elementWiseMouseOverTimeAvg"></div></div>
+				<div class="column_50_50">						<div class="menuOff" id="time_over_piechart"></div></div></div>
+
+				</main>    
+ 
+							   <div class="thanks">Thank you!</div>
+
+				<div class="notices">
+				<div>NOTICE:</div>
+					<div class="notice">This report shows the Usage Analytics of the User on the Specified Date-TimeStamp Selected.</div>
+				</div>
+			
+			<footer>
+				End of Report
+			</footer>
+		</div>
+		<!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
+		<div></div>
+	</div>
+  </div>  
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  
+   
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+
+ 
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCzWGE0t4s4eLBLczJb18OlbdJlnOi4gEc",
+    authDomain: "project-780c0.firebaseapp.com",
+    databaseURL: "https://project-780c0.firebaseio.com",
+    projectId: "project-780c0",
+    storageBucket: "project-780c0.appspot.com",
+    messagingSenderId: "502581132266",
+    appId: "1:502581132266:web:9959e3e7b9493825271093"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+</script>
+<script src="index.js"></script>
+
+ 
+
+</body>
+</html>
